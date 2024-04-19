@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/fontawesome.min.js"
+      integrity="sha512-1M9vud0lqoXACA9QaA8IY8k1VR2dMJ2Qmqzt9pN2AH7eQHWpNsxBpaayV0kKkUsF7FLVQ2sA2SSc8w5VOm7/mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header sec  -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo">Portfolio</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#porfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+
+        <div id="header-img">
+          <div class="header_text">
+            <p>Frontend Developer</p>
+            <h1>I'm <span>Khushbu</span></h1>
+          </div>
+          <img src="./images/my-pic.png" alt="my-pic" id="head-img" />
+        </div>
+        <!-- about  -->
+        <div id="about">
+          <div class="container">
+            <div class="row">
+              <div class="about-col-1">
+                <img src="./images/khu.jpg" alt="myPic" />
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub_title">About Me</h1>
+                <p>
+                  I'm a Frontend Developer in HTML, CSS, Bootstrap, JavaScript,
+                  ES6, React, Redux, and Material UI  With nine month experience
+                  as a freelancer . I've had working on various projects.
+                </p>
+                <div class="tab-titles">
+                  <p
+                    class="tab-links active-link"
+                    onclick="handleLink('skills')"
+                  >
+                    Skills
+                  </p>
+                  <p class="tab-links" onclick="handleLink('experience')">
+                    Experience
+                  </p>
+                  <p class="tab-links" onclick="handleLink('education')">
+                    Education
+                  </p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li><span> Html5 </span></li>
+                    <li><span> Css3 </span></li>
+                    <li><span> JavaScript </span></li>
+                    <li><span> React.js </span></li>
+                    <li><span>Redux </span></li>
+                    <li><span> Bootstrap </span></li>
+                    <li><span> Material UI</span></li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                  <ul>
+                    <li>
+                      <span> nine Months</span><br />
+                      <br />
+                      As a Freelancer
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                  <ul>
+                    <li>
+                      <span> 2023 </span><br />Frontend Developer Training at
+                      <strong> Infoxygen</strong> <br />
+                    </li>
+                    <li>
+                      <span> 2023 </span><br />Pursuring MCA at
+                      <strong> Lovely Professional University</strong>
+                    </li>
+                    <li>
+                      <span> 2022-2023 </span> <br />
+                      Diploma in Software Development and Programming at
+                      <strong>
+                        Jagat Guru Nanak Dev Punjab State Open University
+                        Patiala Punjab</strong
+                      >
+                    </li>
+                    <li>
+                      <span>2020- 2023 </span> <br />Graduation at
+                      <strong>Punjabi University</strong>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- portfolio -->
+        <div id="porfolio">
+          <div class="container">
+            <h1 class="sub_title">My work</h1>
+            <div class="work-list">
+              <div class="work">
+                <img
+                  src="./images/first-project.png"
+                  alt="first-project"
+                  class="project-list"
+                />
+                <div class="layer">
+                  <h3>ANV Industries LTD</h3>
+                  <p>
+                    As a freelancer in frontend development, I has been in HTML,
+                    CSS, and JavaScript tohigh-quality project . ANV project
+                    have been complete.
+                  </p>
+                  <a href="https://www.anvinds.com/"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work">
+                <img
+                  class="project-list"
+                  src="./images/gsv-project.png"
+                  alt=""
+                />
+                <div class="layer">
+                  <h3>GSV</h3>
+                  <p>
+                    Collaborating with a senior frontend developer in the GSV
+                    project has been an work experience. Gsv project have been
+                    inProgress.
+                  </p>
+                  <a href="https://gsv-1.netlify.app/"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work">
+                <img
+                  class="project-list"
+                  src="./images/third-project.png"
+                  alt=""
+                />
+                <div class="layer">
+                  <h3>Daily karts</h3>
+                  <p>
+                    As a Team member in the Daily Karts project, my role is
+                    pivotal in ensuring the successful development. Daily karts
+                    project have been completed in React.js .
+                  </p>
+                  <a href="https://dailykarts.netlify.app/"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+        <!-- contact -->
+        <div id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="contact-left">
+                <h1 class="sub_title">Contact Me</h1>
+                <p>
+                  <i class="fa-solid fa-paper-plane"></i
+                  >io5.khushbumourya@gmail.com
+                </p>
+                <p><i class="fa-solid fa-square-phone"></i>+91-7814827554</p>
+                <div class="social-icons">
+                  <a
+                    href="https://www.linkedin.com/in/khushbu-maurya-833004287/"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                  <a href="https://github.com/io5-khushbu"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+                <a
+                  href="images/Khushbu Maurya Resume.pdf"
+                  download
+                  class="btn btn2"
+                  >Download CV</a
+                >
+              </div>
+              <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="Your Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Your Email"
+                    required
+                  />
+                  <textarea
+                    name="Message"
+                    type="Message"
+                    rows="6"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                  <button class="btn btn2" type="submit">Submit</button>
+                </form>
+                <span id="msg"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; [2024] | Powered by [Khushbu]]</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
