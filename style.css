@@ -18,9 +18,15 @@ html {
   justify-content: space-around;
 }
 #head-img {
-  background-color: aliceblue;
+  /* background-color: aliceblue;
   border-radius: 100%;
-  margin-top: 5%;
+  margin-top: 5%; */
+
+  background-color: aliceblue;
+  border-radius: 50%;
+  margin-top: 10%;
+  height: 42vh;
+  width: 250px;
 }
 
 #header {
